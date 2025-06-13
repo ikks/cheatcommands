@@ -1,0 +1,13 @@
+% Debian management
+
+# Find packages that contain file
+apt-file search -x .*bin/<file>$
+
+# Show where a package was installed from
+apt show <package> 2>/dev/null | grep Sources | gawk '{print $2}'
+
+# Show contents of an installed package
+dpkg -L <package>
+
+# Update and Upgrade
+sudo apt update && sudo apt upgrade && sudo apt clean && sudo apt-file update
