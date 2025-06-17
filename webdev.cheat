@@ -1,0 +1,5 @@
+% Webdev
+
+# Launch a simple webserver
+
+python -m http.server <port>
