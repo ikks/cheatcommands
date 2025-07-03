@@ -4,7 +4,6 @@
 
 python -m http.server <port>
 
-
 # Visit an ngrok endpoint
 
 w3m `~/Downloads/ngrok api --api-key $NGROK_API_KEY endpoints list  |jq '.endpoints[].public_url' | sed 's/"//g'`
